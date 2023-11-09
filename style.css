@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@keyframes change-color {
+    
+}
+*{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+}
+header {
+    color: white;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+#main{
+    background-image: url(img/img/bgMAIN.png);
+}
+#about{
+    background-image: url(img/img/bgABOUT.png);
+}
+#skills{
+    background-image: url(img/img/bgSKILLS.png);
+}
+#works{
+    background-image:url(img/img/bgWORKS.png);
+}
+#comments{
+    background-image: url(img/img/bgCOMMENTS.png);
+}
+.main-block, .about-block, .skills-block, .works-block, .commemts-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.main-block{
+    flex-direction: column;
+    height: 100vh;
+
+}
+.main-content{
+    width: 849px;
+    height: 223px;
+    background-image: url(img/img/form1.png);
+    padding-left: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.main-title{
+    color: #2b2d35;
+    font-size: 80px;
+    padding-top:67px ;
+}
+.main-subtitle{
+    color:#2b2d35;
+    font-size: 20px;
+    
+}
+.button{
+    width: 200px;
+    height: 60px;
+    border-radius: 95px;
+    background-color: #BBFF2C;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px rgb(4, 70, 2);
+}
+.button a {
+    text-decoration: none; 
+    font-size: 21px; 
+  }
+.button:hover {
+    background-color: red; 
+    transition: 3.2s;
+}
+.anim{
+    width: 10222px;
+    height: 102px;
+    animation-name: change-color;
+    animation-duration: 3s;
+    animation-iteration-count: 122;
+    animation-direction: normal;
+}
+@keyframes change-color {
+    from{background-color: white;}
+    to{background-color: black;}
+}
+.moving-planet{
+    background-image: url(img/img/moving-planet.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: 122;
+    animation-direction: alternate;
+}
+@keyframes move {
+    from{transform: translateY(0px);}
+    to{transform: translateY(70px);}
+}
+.title{
+    padding-top: 100px;
+    color: #fff;
+    font-size: 80px;
+    box-shadow: 5px black;
+    text-align: center;
+    /* background-image: url(img/img/form2.png); */
+}
+
+

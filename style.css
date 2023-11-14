@@ -67,6 +67,7 @@ section{
     color: #2b2d35;
     font-size: 80px;
     padding-top:67px ;
+    z-index: 1;
 }
 .main-subtitle{
     color:#2b2d35;
@@ -126,9 +127,57 @@ section{
     padding-top: 100px;
     color: #fff;
     font-size: 80px;
-    box-shadow: 5px black;
+    text-shadow: 5px 5px black;
     text-align: center;
     /* background-image: url(img/img/form2.png); */
+
+}
+.planeta{
+    background-image: url(img/img/planet.png);
+    width: 405px; 
+    height: 330px;
+    transform: rotate(176deg);
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+}
+.about-content{
+    size: 35% 270px;
+    padding-top: 40px;
+    padding-left: 40px;
+    background-color: #792aff;
+    position: relative;
+    border-radius: 0px 0px 0px 20px;
+    display: flex;
+}
+.about-title{
+    color: #fff;
+    font-size: 20px;
+    max-width: 463px;
+    margin-bottom: 20px;
+}
+.about-card{
+    background-image: url(img/img/form2.png);
+    width: 376px;
+    height: 346px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+.about-card p{
+    color: #000;
+    font-size: 17px;
+    display: flex;
+    align-self: start;
+    padding-left: 20px;
+    line-height: 25px;
+}
+.about-card img{
+    padding-bottom: 20px;
 }
 
 

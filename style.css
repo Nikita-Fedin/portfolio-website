@@ -179,5 +179,54 @@ section{
 .about-card img{
     padding-bottom: 20px;
 }
+.skills-content{
+    background-image: url(img/img/form3.png);
+    height: 350px;
+    width: auto;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-direction: column;
+    margin: 20px;
+    padding-left: 10px;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+}
+.skills-content p{
+    color: #000;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+}
+.moving-planet1{
+    background-image: url(img/img/moving-planet2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: 122;
+    animation-direction: alternate;
+}
+@keyframes moving {
+    from{transform: translateY(0px);}
+    to{transform: translateY(90px);}
+}
+.works-content p{
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 
 

@@ -5,6 +5,7 @@
 *{
     margin: 0;
     font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
 }
 footer {
     position: fixed;
@@ -302,5 +303,56 @@ section{
     max-width: 250px;
 }
 
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
 
+.fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-right: 150px;
+}
+
+.nav-link{
+    width: 112px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    animation-name: change-color;
+}
+.nav-link:hover{
+    background-color: #792aff;
+    transition: 2s;
+}
+
+.logo{
+    color: #BBFF2C;
+    font-size: 67px;
+    padding-left: 50px;
+}
+
+.active{
+    background-color:#792aff;
+    color: #fff;
+}
 

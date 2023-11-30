@@ -39,3 +39,21 @@ window.onscroll = function() {
     }
 };
 
+    let change = document.querySelector('.nav-links')
+    function qwe() {   
+
+    if (change.style.transform === 'rotate(180deg)') {
+        change.style.transform = 'rotate(0deg)';
+      } 
+    else {
+        change.style.transform = 'rotate(180deg)';
+      }
+    };
+
+    change.onclick = qwe;
+
+
+
+
+
+ 

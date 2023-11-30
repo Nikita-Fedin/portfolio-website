@@ -356,3 +356,37 @@ nav{
     color: #fff;
 }
 
+@media (max-width:1000px) {
+    .nav-links{
+        display: none;
+    }
+
+    .logo{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .main-content{
+        max-width: 320px;
+    }
+
+    .main-title{
+        padding-top: 30px;
+        font-size: 30px;
+    }
+
+    .main-subtitle{
+        font-size: 15px;
+    }
+
+    .planeta , .moving-planet , .moving-planet1 , .moving-planet2{
+        display: none;
+    }
+
+    .title{
+        font-size: 50px;
+        padding-top: 30px;
+    }
+}
+

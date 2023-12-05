@@ -388,5 +388,98 @@ nav{
         font-size: 50px;
         padding-top: 30px;
     }
+    .button{
+        font-size: 20px;
+        width: 180px;
+        height: 56px;
+        }
+
+    .about-block{
+        flex-direction: column;
+        margin-top: 20px ;
+        padding: 0;
+    }
+
+    .about-card{
+        order: -1;
+        background-size: 20px;
+        padding-top: 20px;
+        width: 326px;
+        height: 296px;
+    }
+
+    .about-card img{
+        width: 85%;
+    }
+
+    .about-content{
+        width: 75%;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .about-title{
+        font-size: 18px;
+    }
+
+    .skills-card{
+        margin: 20px;
+        padding-left: 10px;
+        background-size: contain;
+    }
+
+    .skills-card{
+        font-size: 16px;
+        margin-top: 15%;
+        margin-bottom: 20px;
+    }
+
+    .skills-section{
+        min-height: 60vh;
+    }
+
+    .skills-card .button{
+        position: absolute;
+        bottom: 100px;
+    }
+
+    .works-block{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .works-block img{
+        margin: 20px 0;
+        width: 80%;
+    }
+
+    .commemts-block{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .comment{
+        background-image: url(img/img/comment-mobile.png);
+    }
+
+    .comment p{
+        font-size: 15px;
+        max-width: 290px;
+    }
+
+    footer{
+        height: 56px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer-info{
+        text-align: center;
+    }
 }
+
 

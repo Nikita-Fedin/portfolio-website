@@ -1,5 +1,5 @@
 let classList = '.main-link'
-let menu = document.querySelector(".nav-links");    
+let menu = document.querySelector(".fixed-menu");    
 
 
 menu.addEventListener('click',function(event){
@@ -53,7 +53,9 @@ window.onscroll = function() {
     change.onclick = qwe;
 
 
-
-
+let hide = document.querySelector('.mobile-button')
+hide.addEventListener("click", function(event){
+    document.querySelector('.mobile-menu').classList.toggle("hide");
+})
 
  

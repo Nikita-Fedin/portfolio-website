@@ -523,3 +523,7 @@ nav{
     min-height: 100vh;
 }
 
+.off-scroll{
+    overflow: hidden;
+}
+

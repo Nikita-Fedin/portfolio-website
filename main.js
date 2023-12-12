@@ -5,11 +5,21 @@ let menu = document.querySelector(".fixed-menu");
 menu.addEventListener('click',function(event){
     let clickTarget = event.target
     let activeBtn = document.querySelector('.active')
-
+    let mobileMenu = document.querySelector(".mobile-menu")
     if (clickTarget.classList.contains('nav-link')){
         activeBtn.classList.remove('active');
         clickTarget.classList.add('active');
+        mobileMenu.classList.toggle("hide");
     }
+
+    let body = document.querySelector("body");
+    if (!body.classList.contains("off-scroll")&&
+            !mobileMenu.classList.contains('hide')){
+        body.classList.add("off-scroll");
+     } 
+     else{
+        body.classList.remove("off-scroll");
+     }              
 });
 
 window.onscroll = function() {
@@ -57,5 +67,6 @@ let hide = document.querySelector('.mobile-button')
 hide.addEventListener("click", function(event){
     document.querySelector('.mobile-menu').classList.toggle("hide");
 })
+
 
  

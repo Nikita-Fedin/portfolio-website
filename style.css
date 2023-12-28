@@ -8,9 +8,6 @@
     scroll-behavior: smooth;
 }
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 10px; 
@@ -494,7 +491,17 @@ nav{
         right: 0;
         margin: 10px; 
     }
- }
+   
+    .comments-block {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .comment{
+        display: flex;
+        height: 60px;
+    }
+}
 
  .hide {
     display: none;

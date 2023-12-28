@@ -9,9 +9,12 @@ menu.addEventListener('click',function(event){
     if (clickTarget.classList.contains('nav-link')){
         activeBtn.classList.remove('active');
         clickTarget.classList.add('active');
-        mobileMenu.classList.toggle("hide");
+        // mobileMenu.classList.toggle("hide");
+        if(!mobileMenu.classList.contains('hide')){
+            mobileMenu.classList.add('hide');
+          }
+      
     }
-
     let body = document.querySelector("body");
     if (!body.classList.contains("off-scroll")&&
             !mobileMenu.classList.contains('hide')){
